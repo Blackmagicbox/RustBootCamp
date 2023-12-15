@@ -1,0 +1,7 @@
+# Rust executables
+target
+# MacOS
+.DS_Store
+
+# IDea
+.idea
