@@ -1,5 +1,5 @@
 fn square_root(x: f64) -> f64 {
-    x.sqrt()
+    return x.sqrt();
 }
 
 fn main() {
