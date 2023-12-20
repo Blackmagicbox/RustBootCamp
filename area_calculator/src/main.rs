@@ -1,5 +1,4 @@
-use area_calculator::print_coords_difference;
-use area_calculator::return_unit;
+use area_calculator::{area_calculator, print_coords_difference, return_unit, volume_calculator};
 
 fn main() {
     let width = 30;
@@ -21,12 +20,4 @@ fn main() {
     let diff = print_coords_difference(x, y);
 
     println!("The difference between {x} and {y} is {diff}");
-}
-
-fn volume_calculator(width: u32, height: u32, depth: u32) -> u32 {
-    area_calculator(width, height) * depth
-}
-
-fn area_calculator(width: u32, height: u32) -> u32 {
-    width * height
 }
