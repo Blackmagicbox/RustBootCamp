@@ -1,4 +1,5 @@
-#! allow(unused_variables)
+use area_calculator::print_coords_difference;
+use area_calculator::return_unit;
 
 fn main() {
     let width = 30;
@@ -13,8 +14,13 @@ fn main() {
     );
     println!(
         "and the volume of {width}x{height}x{depth} is {volume}{unit} \n",
-        unit = area_calculator::return_unit(3)
-    )
+        unit = return_unit(3)
+    );
+
+    let (x, y) = (-10, 20);
+    let diff = print_coords_difference(x, y);
+
+    println!("The difference between {x} and {y} is {diff}");
 }
 
 fn volume_calculator(width: u32, height: u32, depth: u32) -> u32 {
