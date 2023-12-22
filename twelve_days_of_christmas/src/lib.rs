@@ -30,11 +30,3 @@ pub fn sing() {
         count += 1;
     }
 }
-
-pub fn try_to_reference_two_variables() -> String {
-    let mut s1 = String::from("hello");
-    let s2 = &mut s1;
-    s2.push_str(", world!");
-    println!("{s2}");
-    s2.to_string()
-}
