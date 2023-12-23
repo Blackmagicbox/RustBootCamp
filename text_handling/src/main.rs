@@ -27,6 +27,5 @@ fn get_time(time: &String) -> &str {
             return &time[i + 1..];
         }
     }
-
     &time[..]
 }
