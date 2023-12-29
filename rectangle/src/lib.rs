@@ -14,3 +14,12 @@ impl Rectangle {
         self.width > other_rectangle.width && self.height > other_rectangle.height
     }
 }
+
+impl Rectangle {
+    pub fn square(size: u32) -> Rectangle {
+        Rectangle {
+            width: size,
+            height: size,
+        }
+    }
+}
